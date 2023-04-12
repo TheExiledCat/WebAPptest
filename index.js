@@ -5,9 +5,9 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
   let data = req.body;
-  console.log( req.query);
+  console.log(req.query);
   console.log(data);
-  res.send("IT WORKED\n"+JSON.stringify(data));
+  res.send("I Love " + req.query.name);
   res.end();
 })
 
