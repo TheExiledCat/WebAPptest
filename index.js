@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
   let data = req.body;
   console.log(req.query);
   console.log(data);
-  res.send("I Love " + req.query.name?req.query.name:"Everyone");
+  res.send("I Love " + (req.query.name?req.query.name:"Everyone"));
   res.end();
 })
  app.get('/:id', async (req, res) => {
